@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              green: "#B9FF66",
+              liteblack: "#000000",
+              grey: "#F3F3F3",
+              danger: "#EF4444",
+              tex: "#FFFFFF",
+              darkgray: "#292A32",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Landing page</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-white fixed w-full z-20 top-0 start-0">
+      <div
+        class="max-w-screen-xl flex items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="/index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="/images/star.png" class="h-8" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap"
+            >Positivus</span
+          >
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-black font-medium rounded-lg text-sm px-4 py-2 text-center border border-black hidden sm:flex"
+          >
+            Request a quote
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-black"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:bg-white text-black"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 rounded-sm md:p-0 text-[#000000]"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 rounded-sm md:p-0 text-[#000000]"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 rounded-sm md:p-0 text-[#000000]"
+                >Use cases</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 rounded-sm md:p-0 text-[#000000]"
+                >pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 rounded-sm md:p-0 text-[#000000]"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section  -->
+    <div class="flex pt-32 justify-between p-3 md:px-24">
+      <!-- text section  -->
+      <div class="flex flex-col gap-y-6">
+        <h1 class="flex font-semibold text-4xl sm:text-5xl">
+          Navigating the<br />
+          digital landscape<br />
+          for success
+        </h1>
+        <div>
+          <img
+            src="images/herosection.png"
+            alt="Image"
+            width="500"
+            class="sm:hidden flexs"
+          />
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          Culpa quaerat neque quos, facilis voluptas porro in<br />
+          reiciendis excepturi vitae iure, facere, aliquam tempora<br />
+          obcaecati hic?
+        </p>
+        <button class="text-white bg-black px-5 py-4 rounded-md w-fit">
+          Book a consultation
+        </button>
+      </div>
+      <!-- Image section -->
+      <div>
+        <img
+          src="images/herosection.png"
+          alt="Image"
+          width="500"
+          class="hidden sm:flex"
+        />
+      </div>
+    </div>
+
+    <!-- logo section -->
+    <div class="flex flex-wrap px-5 w-full justify-around items-center gap-7">
+      <img src="images/amazon.png" alt="image" width="150" />
+      <img src="images/dribble.png" alt="image" width="150" />
+      <img src="images/hubspot.png" alt="image" width="150" />
+      <img src="images/Notion.png" alt="image" width="150" />
+      <img src="images/Zoom.png" alt="image" width="150" />
+    </div>
+
+    <!-- services section-->
+    <div class="flex gap-x-5 pt-14 px-24">
+      <button
+        class="text-black bg-[#B9FF66] py-1 px-3 text-4xl rounded-md font-semibold items-center"
+      >
+        Services
+      </button>
+      <p class="text-sm">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+        Odio, assumenda consectetur. Nostrum nulla in illo cum, voluptatem
+        beatae .
+      </p>
+    </div>
+    <!-- Card section  -->
+    <div class="flex py-6">
+      <div
+        class="flex border border-black bg-grey rounded-3xl p-6 w-fit border-b-4 gap-x-6 items-center"
+      >
+        <div class="flex flex-col gap-y-24">
+          <div class="flex flex-col">
+            <button
+              class="text-black bg-green font-semibold rounded-md text-xl p-1 w-fit"
+            >
+              Search engine
+            </button>
+            <button
+              class="text-black bg-green font-semibold rounded-md text-xl p-1 w-fit"
+            >
+              optimization
+            </button>
+          </div>
+          <!-- image -->
+          <div class="sm:hidden flex">
+            <img
+              src="images/search engine.png"
+              alt="image"
+              class="flex w-"
+              width="200"
+            />
+          </div>
+          <div class="flex items-center text-lg gap-x-3">
+            <button class="bg-black p-2 rounded-full">
+              <img src="icons/greenarrow.svg" alt="icon" width="20" />
+            </button>
+            <p>learn more</p>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="sm:grid hidden">
+          <img
+            src="images/search engine.png"
+            alt="image"
+            class="flex w-"
+            width="200"
+          />
+        </div>
+      </div>
+      <div
+        class="flex border border-black bg-grey rounded-3xl p-6 w-fit border-b-4 gap-x-6 items-center"
+      >
+        <div class="flex flex-col gap-y-24">
+          <div class="flex flex-col">
+            <button
+              class="text-black bg-green font-semibold rounded-md text-xl p-1 w-fit"
+            >
+              Search engine
+            </button>
+            <button
+              class="text-black bg-green font-semibold rounded-md text-xl p-1 w-fit"
+            >
+              optimization
+            </button>
+          </div>
+          <!-- image -->
+          <div class="sm:hidden flex">
+            <img
+              src="images/search engine.png"
+              alt="image"
+              class="flex w-"
+              width="200"
+            />
+          </div>
+          <div class="flex items-center text-lg gap-x-3">
+            <button class="bg-black p-2 rounded-full">
+              <img src="icons/greenarrow.svg" alt="icon" width="20" />
+            </button>
+            <p>learn more</p>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="sm:grid hidden">
+          <img
+            src="images/search engine.png"
+            alt="image"
+            class="flex w-"
+            width="200"
+          />
+        </div>
+      </div>
+      <div
+        class="flex border border-black bg-grey rounded-3xl p-6 w-fit border-b-4 gap-x-6 items-center"
+      >
+        <div class="flex flex-col gap-y-24">
+          <div class="flex flex-col">
+            <button
+              class="text-black bg-green font-semibold rounded-md text-xl p-1 w-fit"
+            >
+              Search engine
+            </button>
+            <button
+              class="text-black bg-green font-semibold rounded-md text-xl p-1 w-fit"
+            >
+              optimization
+            </button>
+          </div>
+          <!-- image -->
+          <div class="sm:hidden flex">
+            <img
+              src="images/search engine.png"
+              alt="image"
+              class="flex w-"
+              width="200"
+            />
+          </div>
+          <div class="flex items-center text-lg gap-x-3">
+            <button class="bg-black p-2 rounded-full">
+              <img src="icons/greenarrow.svg" alt="icon" width="20" />
+            </button>
+            <p>learn more</p>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="sm:grid hidden">
+          <img
+            src="images/search engine.png"
+            alt="image"
+            class="flex w-"
+            width="200"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="flex flex-col bg-liteblack mx-28 rounded-t-3xl gap-y-14">
+      <!-- top section -->
+      <div class="w-full z-20">
+        <div
+          class="max-w-screen-xl flex items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="/index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="/images/whitestar.png" class="h-8" alt="Flowbite Logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >Positivus</span
+            >
+          </a>
+
+          <!-- pages -->
+          <div class="items-center justify-between w-full md:w-auto text-tex">
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <li>
+                <a href="#" class="py-2 px-3 rounded-sm md:p-0 underline"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 rounded-sm md:p-0"
+                  >services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 rounded-sm md:p-0"
+                  >Use cases</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 rounded-sm md:p-0"
+                  >pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 rounded-sm md:p-0">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <!-- icons -->
+          <div>
+            <img src="images/Social icons.png" alt="icons" width="150" />
+          </div>
+        </div>
+      </div>
+      <!-- contact us -->
+      <div class="flex justify-around gap-y-5">
+        <div class="flex flex-col gap-y-4">
+          <button
+            class="text-black bg-[#B9FF66] px-2 text-xl rounded-md font-semibold items-center w-fit"
+          >
+            contact us:
+          </button>
+          <div class="flex flex-col gap-y-4">
+            <p class="text-tex">Email: info@positivus.com</p>
+            <p class="text-tex">Phone: 555-567-8901</p>
+            <p class="text-tex">
+              Address: 1234 Main St<br />
+              Moonstone City, Stardust State 12345
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-darkgray rounded-xl flex flex-row p-16 w-full max-w-2xl gap-x-5"
+        >
+          <input
+            type="email"
+            id="email-address-icon"
+            class="bg-darkgray text-sm rounded-lg flex w-full ps-10 p-2.5 border border-tex max-w-md"
+            placeholder="email"
+          />
+          <button
+            class="text-black bg-[#B9FF66] py-1 px-3 text-xl rounded-md items-center grid w-full"
+          >
+            Subscribe for news
+          </button>
+        </div>
+      </div>
+      <!-- border -->
+      <div class="border border-tex flex mx-14"></div>
+      <!-- privacy  -->
+      <div class="flex text-tex gap-x-9 px-14 py-6">
+        <p>© 2023 Positivus. All Rights Reserved.</p>
+        <p class="underline">Privacy Policy</p>
+      </div>
+    </footer>
+  </body>
+</html>
